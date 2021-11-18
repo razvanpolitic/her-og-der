@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="images/fav/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/fav/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="images/fav//favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="images/fav/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/fav/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16.png">
+    <link rel="apple-touch-icon" href="images/fav/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/fav/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/fav/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/fav/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/fav/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/fav/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/fav/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/fav/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- css styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/jjf5rmv.css">
+
+    <!-- javascript for the burger menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Café Her og Der</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="burger">
+            <span></span>
+        </div>
+
+        <!-- menu items -->
+        <nav>
+            <ul class="main">
+                <li class="navitem"><a href="#home">Home</a></li>
+                <li class="navitem"><a href="#about-us">About</a></li>
+                <li class="navitem"><a href="#menu">Menu</a></li>
+                <li class="navitem"><a href="#gallery">Gallery</a></li>
+                <li class="navitem"><a href="#hours">Opening hours</a></li>
+                <li class="navitem"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- social icons -->
+            <div class="social">
+                <a href="https://www.facebook.com/CafeHerOgDer/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
+                        viewBox="0 0 64 64">
+                        <g transform="translate(0, 0)">
+                            <path
+                                d="M39.8 12.2H48V0h-9.7C26.6.5 24.2 7.1 24 14v6.1h-8V32h8v32h12V32h9.9l1.9-11.9H36v-3.7a3.962 3.962 0 0 1 3.8-4.2z">
+                            </path>
+                        </g>
+                    </svg></a>
+                <a href="https://www.instagram.com/cafeherogder/" target="_blank"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="64px" height="64px" viewBox="0 0 64 64">
+                        <g transform="translate(0, 0)">
+                            <path
+                                d="M32,5.766c8.544,0,9.556,0.120,12.931,0.187c3.642,0.166,7.021,0.895,9.621,3.496 c2.6,2.6,3.329,5.979,3.496,9.621c0.154,3.374,0.187,4.386,0.187,12.931s-0.033,9.556-0.187,12.931 c-0.166,3.642-0.895,7.021-3.496,9.621c-2.6,2.6-5.98,3.329-9.621,3.496c-3.374,0.154-4.386,0.187-12.931,0.187 s-9.557-0.033-12.931-0.187c-3.642-0.166-7.021-0.895-9.621-3.496c-2.6-2.6-3.329-5.979-3.496-9.621 C5.798,41.556,5.766,40.544,5.766,32s0.033-9.556,0.187-12.931c0.166-3.642,0.895-7.021,3.496-9.621 c2.6-2.6,5.979-3.329,9.621-3.496C22.444,5.798,23.456,5.766,32,5.766 M32,0c-8.691,0-9.78,0.037-13.194,0.193 c-5.2,0.237-9.768,1.511-13.436,5.178C1.705,9.037,0.43,13.604,0.193,18.806C0.037,22.22,0,23.309,0,32 c0,8.691,0.037,9.78,0.193,13.194c0.237,5.2,1.511,9.768,5.178,13.436c3.666,3.666,8.234,4.941,13.436,5.178 C22.22,63.963,23.309,64,32,64s9.78-0.037,13.194-0.193c5.199-0.237,9.768-1.511,13.436-5.178c3.666-3.666,4.941-8.234,5.178-13.436 C63.963,41.78,64,40.691,64,32s-0.037-9.78-0.193-13.194c-0.237-5.2-1.511-9.768-5.178-13.436 c-3.666-3.666-8.234-4.941-13.436-5.178C41.78,0.037,40.691,0,32,0L32,0z">
+                            </path>
+                            <path data-color="color-2"
+                                d="M32,15.568c-9.075,0-16.432,7.357-16.432,16.432c0,9.075,7.357,16.432,16.432,16.432 S48.432,41.075,48.432,32C48.432,22.925,41.075,15.568,32,15.568z M32,42.667c-5.891,0-10.667-4.776-10.667-10.667 c0-5.891,4.776-10.667,10.667-10.667c5.891,0,10.667,4.776,10.667,10.667C42.667,37.891,37.891,42.667,32,42.667z">
+                            </path>
+                            <circle data-color="color-2" cx="49.082" cy="14.918" r="3.84"></circle>
+                        </g>
+                    </svg></a>
+            </div>
+
+            <!-- sub items -->
+            <ul class="sub" style="color:white">
+                <li><a href="tel:+4530399730">30 39 97 30</a></li>
+                <li><a href="mailto:info@herogder.nu">info@herogder.nu</a></li>
+                <li>Tordenskjoldsgade 34, 8200 Aarhus</li>
+            </ul>
+        </nav>
+
+
+
+        <!-- overlay -->
+        <div class="overlay">
+        </div>
+    </header>
+
+    <!-- VIDEO -->
+    <div id="home">
+        <div class="flex-columns">
+            <div class="video">
+                <video loop autoplay muted playsinline style="max-width:100%; max-height:100%;">
+                    <source src="video/Video_Coffeeshop.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="content">
+            <!-- ABOUT US -->
+            <section class="about-us flex-columns" id="about-us">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                            <h1>About Us</h1>
+                            <p class="about-us-p">
+                                Café Her og Der is a family business founded in the summer of 2016, starting with our
+                                small
+                                rolling coffee
+                                bar that you can always find near the Deer Park.
+                                <br><br>
+                                Our wish was to create a cozy space where our
+                                customers can
+                                get the full hygge experience. With that in mind, two years ago we opened another
+                                location,
+                                a
+                                small basement
+                                coffee shop where you can sit down, relax and let the time slow down while you listen to
+                                some
+                                good music. We
+                                care about our customers and we strive to bring them the best products possible and
+                                that’s
+                                why
+                                our coffee is
+                                made from organic, freshly baked beans. Our baked goods are also made from scratch out
+                                of
+                                high-quality
+                                ingredients in the stove oven.
+                            </p>
+                        </div>
+                        <div class="column-2">
+                            <img class="about-us-img" src="images/About_us/About_us.png" alt="about-us-picture">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="flex-columns column">
+                <img src="images/Spikes/Spikes_down.png" alt="background-spikes"
+                    style="width:100%; height:100%; vertical-align:bottom;">
+            </div>
+            <!-- MENU -->
+            <section class="menu flex-columns" id="menu">
+                <div class="column">
+                    <h1>Menu</h1>
+
+                    <img src="images/croissant.svg" alt="menu-separator">
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="item">
+                                <h4>MORGENBRÆTET</h4>
+                                <p>koldhævet surdejsbolle, arlaaunika havgus, syltetøj, yoghurt m. granola og sirup,
+                                    næsten-raw snackbar
+                                </p>
+                            </td>
+                            <td>
+                                <h4>55,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">
+                                <h4>HELE DAGEN BRÆTTET</h4>
+                                <p>arla unika havgus + gammel knas , 2x charcuteri
+                                    syltede rødlog, yoghurt m.granola og sirup, syltetøj,
+                                    chokocreme samt brod</p>
+                            </td>
+                            <td>
+                                <h4>85,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">
+                                <h4>TOAST - Ølandsbrød</h4><br>
+                                <ul>
+                                    <li>
+                                        <h5>FENNIKELPPØLSE</h5>
+                                        <p>syltede rødlog, gammel knas, mozzarella, dijonsnnep & tapenade</p>
+                                    </li>
+                                    <li>
+                                        <h5>PORTOBELLO</h5>
+                                        <p>gedeost, ovnbagt peberfrugt, syltede rødløg & tapenade</p>
+                                    </li>
+                                    <li>
+                                        <h5>SKINKE</h5>
+                                        <p>gammel knas, mozzarella, pesto, dijonsennep & cornichoner</p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="price">
+                                <h4>59,-</h4>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <img src="images/coffee-menu.svg" alt="menu-separator">
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="item">
+                                <h4>VARM CHOKOLADE</h4>
+                                <p>med flødeskum</p>
+                            </td>
+                            <td class="price">
+                                <h4>40,-/45,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">
+                                <h4>TJUBANG CHOKOLADE</h4>
+                                <p>med chili og appelsin</p>
+                            </td>
+                            <td class="price">
+                                <h4>43,-/48,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">
+                                <h4>MOCHACHINO</h4>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;+marshmallows</p>
+                            </td>
+                            <td class="price">
+                                <h4>45,-/50,-</h4>
+                                <p>5,-</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">
+                                <h4>VARM SOLBÆRSAFT</h4>
+                                <p>med kanel og applesin</p>
+                            </td>
+                            <td class="price">
+                                <h4>37,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>PUMPKIN SPICE LATTE</h4>
+                            <td class="price">
+                                <h4>38,-/43,-</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="single-item">
+                                <h4>HÅNDBRYG V60</h4>
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>FILTER</h4>
+                            <td class="price">
+                                <h4>30,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>CAPPUCIN0</h4>
+
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>LATTE</h4>
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>FLAT WHITE</h4>
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>CORTADO</h4>
+                            <td class="price">
+                                <h4>33,-/38,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>AMERICANO0</h4>
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>ESPRESSO</h4>
+                            <td class="price">
+                                <h4>28,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>CHAI LATTE</h4>
+                            <td class="price">
+                                <h4>35,-/40,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>DIRTY CHAI</h4>
+                            <td class="price">
+                                <h4>40,-/45,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>THE</h4>
+                            <td class="price">
+                                <h4>28,-</h4>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <h4>ALKOHOLFRI:</h4>
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="single-item">
+                                <h4>ØKO SAFT</h4>
+                            </td>
+                            <td class="price">
+                                <h4>27,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>ØL</h4>
+                            </td>
+                            <td class="price">
+                                <h4>38,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>HVIDVIN</h4>
+                            </td>
+                            <td class="price">
+                                <h4>(glas) 50,-<br>(flaske) 225,-</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="single-item">
+                                <h4>ROSÉ</h4>
+                            </td>
+                            <td class="price">
+                                <h4>(glas) 55,-<br>(flaske) 250,-</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+
+
+            <!-- GALLERY -->
+            <section class="gallery" id="gallery">
+                <div class="flex-columns column">
+                    <img src="images/Spikes/Spikes_up.png" alt="background-spikes"
+                        style="width:100%; height:100%; vertical-align:top;">
+                </div>
+                <div class="gallery-header">
+                    <h1>Gallery</h1>
+                </div>
+                <div class="pictures">
+                    <div class="column">
+                        <img class="photos" src="/images/Gallery/3.jpg" alt="gallery-image-1">
+                        <img class="photos" src="/images/Gallery/4.jpg" alt="gallery-image-2">
+                        <img class="photos" src="/images/Gallery/1.jpg" alt="gallery-image-3">
+                    </div>
+                    <div class="column">
+                        <img class="photos" src="/images/Gallery/12.jpg" alt="gallery-image-4">
+                        <img class="photos" src="/images/Gallery/6.jpg" alt="gallery-image-5">
+                        <img class="photos" src="/images/Gallery/7.jpg" alt="gallery-image-6">
+                    </div>
+                    <div class="column">
+                        <img class="photos" src="/images/Gallery/9.jpg" alt="gallery-image-7">
+                        <img class="photos" src="/images/Gallery/10.jpg" alt="gallery-image-8">
+                        <img class="photos" src="/images/Gallery/11.jpg" alt="gallery-image-9">
+                    </div>
+                    <div class="column">
+
+                        <img class="photos" src="/images/Gallery/14.jpg" alt="gallery-image-10">
+                        <img class="photos" src="/images/Gallery/5.jpg" alt="gallery-image-11">
+                        <img class="photos" src="/images/Gallery/13.jpg" alt="gallery-image-12">
+                    </div>
+                    <div class="column">
+                        <img class="photos" src="/images/Gallery/15.jpg" alt="gallery-image-13">
+                        <img class="photos" src="/images/Gallery/26.jpg" alt="gallery-image-14">
+                        <img class="photos" src="/images/Gallery/16.jpg" alt="gallery-image-15">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- CONTACT -->
+        <section class="contact flex-columns" id="contact">
+            <div class="columns">
+                <div class="contact-information column-1">
+                    <h1>Contact</h1>
+
+                    <img src="./images/Contact/Coffee.svg" alt="coffee-con" style="height:10%;width: 10%;">
+                    <p>Tordenskjoldsgade 34, 8200 Aarhus</p>
+                    <br>
+                    <br>
+                    <img src="./images/Contact/Bus.svg" alt="bus-icon" style="height:9%;width: 9%;">
+                    <p>Marselisborg Dyrehaven</p>
+                    <br>
+                    <br>
+                    <img src="./images/Contact/Envelope.svg" alt="envelope-icon" style="height:10%;width: 10%;">
+                    <p>
+                        Want To Join Our Team? Apply here: <br>
+                        Email: <a href="mailto:info@herogder.nu">info@herogder.nu</a>
+                    </p>
+                    <br>
+                    <br>
+                    <img src="./images/Contact/Phone.svg" alt="phone-icon" style="height:7%;width: 7%;">
+                    <p>
+                        Phone number: <a href="tel:+4530399730">30 39 97 30</a>
+                    </p>
+                </div>
+                <div class=" map column-1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.1898659182257!2d10.214249515959054!3d56.171110667118874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c153cd30c7a37%3A0x3eeadb8298b69ae3!2sCaf%C3%A9%20Her%20Og%20Der!5e0!3m2!1sen!2sdk!4v1637147591896!5m2!1sen!2sdk"
+                        allowfullscreen="" style="width:100%; height:100%; border:0;"></iframe>
+                </div>
+            </div>
+        </section>
+        <div class="content-2">
+            <!-- OPENING HOURS -->
+            <section class="hours flex-columns" id="hours">
+                <div class="flex-columns column text-opening-hours">
+
+                    <h1>Opening hours</h1>
+
+                    <h3>Coffeeshop</h3>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="day">
+                                <h4>MONDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.30</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>TUESDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.30</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>WEDNESDAY</h4>
+                            </td>
+
+                            <td class="hour">07.30-17.30</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>THURSDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.30</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>FRIDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.30</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>SATURDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.00</td>
+                        </tr>
+
+                        <tr class="day">
+                            <td>
+                                <h4>SUNDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.00</td>
+                        </tr>
+                    </table>
+
+                    <h3>Bus</h3>
+
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="day">
+                                <h4>SATURDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.00</td>
+                        </tr>
+
+                        <tr>
+                            <td class="day">
+                                <h4>SUNDAY</h4>
+                            </td>
+                            <td class="hour">07.30-17.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <footer class="footer flex-columns">
+                    <div class="flex-columns column">
+                        <div class="social-footer">
+                            <a href="https://www.facebook.com/CafeHerOgDer/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="40px" height="40px" viewBox="0 0 64 64">
+                                    <g transform="translate(0, 0)">
+                                        <path
+                                            d="M39.8 12.2H48V0h-9.7C26.6.5 24.2 7.1 24 14v6.1h-8V32h8v32h12V32h9.9l1.9-11.9H36v-3.7a3.962 3.962 0 0 1 3.8-4.2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/cafeherogder/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" width="40px" height="40px" viewBox="0 0 64 64">
+                                    <g transform="translate(0, 0)">
+                                        <path
+                                            d="M32,5.766c8.544,0,9.556,0.120,12.931,0.187c3.642,0.166,7.021,0.895,9.621,3.496 c2.6,2.6,3.329,5.979,3.496,9.621c0.154,3.374,0.187,4.386,0.187,12.931s-0.033,9.556-0.187,12.931 c-0.166,3.642-0.895,7.021-3.496,9.621c-2.6,2.6-5.98,3.329-9.621,3.496c-3.374,0.154-4.386,0.187-12.931,0.187 s-9.557-0.033-12.931-0.187c-3.642-0.166-7.021-0.895-9.621-3.496c-2.6-2.6-3.329-5.979-3.496-9.621 C5.798,41.556,5.766,40.544,5.766,32s0.033-9.556,0.187-12.931c0.166-3.642,0.895-7.021,3.496-9.621 c2.6-2.6,5.979-3.329,9.621-3.496C22.444,5.798,23.456,5.766,32,5.766 M32,0c-8.691,0-9.78,0.037-13.194,0.193 c-5.2,0.237-9.768,1.511-13.436,5.178C1.705,9.037,0.43,13.604,0.193,18.806C0.037,22.22,0,23.309,0,32 c0,8.691,0.037,9.78,0.193,13.194c0.237,5.2,1.511,9.768,5.178,13.436c3.666,3.666,8.234,4.941,13.436,5.178 C22.22,63.963,23.309,64,32,64s9.78-0.037,13.194-0.193c5.199-0.237,9.768-1.511,13.436-5.178c3.666-3.666,4.941-8.234,5.178-13.436 C63.963,41.78,64,40.691,64,32s-0.037-9.78-0.193-13.194c-0.237-5.2-1.511-9.768-5.178-13.436 c-3.666-3.666-8.234-4.941-13.436-5.178C41.78,0.037,40.691,0,32,0L32,0z">
+                                        </path>
+                                        <path data-color="color-2"
+                                            d="M32,15.568c-9.075,0-16.432,7.357-16.432,16.432c0,9.075,7.357,16.432,16.432,16.432 S48.432,41.075,48.432,32C48.432,22.925,41.075,15.568,32,15.568z M32,42.667c-5.891,0-10.667-4.776-10.667-10.667 c0-5.891,4.776-10.667,10.667-10.667c5.891,0,10.667,4.776,10.667,10.667C42.667,37.891,37.891,42.667,32,42.667z">
+                                        </path>
+                                        <circle data-color="color-2" cx="49.082" cy="14.918" r="3.84"></circle>
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+                        <a href="https://www.findsmiley.dk/933142?utm_source=SpiseGuidenAarhus&utm_medium=SpiseGuidenAarhus&utm_campaign=SpiseGuidenAarhus"
+                            target="_blank"><img
+                                src="https://spiseguidenaarhus.dk/wp-content/themes/rga/images/control_report.png"
+                                alt="smiley-report">
+                        </a>
+                        <br>
+                        <p class="copyright">Copyright © 2021 Café Her og Der</p>
+                    </div>
+
+                </footer>
+
+            </section>
+            <!-- FOOTER -->
+            <div class="spikes columns-1">
+                <img src="images/Spikes/Spikes_down.png" alt="background-spikes"
+                    style="width:100%; height:100%; vertical-align:bottom;">
+            </div>
+        </div>
+    </main>
+
+    <!-- javascript file for opening the burger menu -->
+    <script src="script.js"></script>
+</body>
+
+</html>
